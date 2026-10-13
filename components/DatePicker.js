@@ -18,7 +18,7 @@ export default function DatePicker({thisDate, setThisdate, datelabel}) {
   return (
     <>
     <Text style={styles.label}>{datelabel}</Text>
-    <View style={{flex:1,width: "100%"}} >
+    <View style={{flex:1,width: "100%", height: 140}} >
       
       <Text style={styles.textbox}>{thisDate.toLocaleDateString()}</Text>
       <TouchableOpacity style={styles.button} onPress={showDatePicker}><Text style={{fontSize: 24, fontWeight: "bold"}}>Choose Date</Text></TouchableOpacity>
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
   button: {
     width: "100%",
     height: 50,
-    marginTop: 20,
+    marginTop: 5,
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 8,
